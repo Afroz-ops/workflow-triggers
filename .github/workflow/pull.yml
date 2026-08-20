@@ -11,6 +11,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         
+      - name: Display Message
+        run: echo "checkout the code"
+        
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
