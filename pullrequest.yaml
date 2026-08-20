@@ -21,5 +21,8 @@ jobs:
 		   npm init -y
 		   npm pkg set scripts.test="echo \"Error: no test specified\"" 
 		   npm pkg set scripts.start="node index.js"
+
+	   - name: Display message
+	     run: echo "congratulation"
 				
 
