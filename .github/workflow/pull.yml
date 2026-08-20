@@ -2,7 +2,7 @@ name: Pull Request Workflow
 
 on:
   pull_request:
-    types: opened
+    types: [opened, synchronize, closed]
 
 jobs:
   pr_job:
@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      - name: Display Message
+        run: echo "checkout the code"
         
       - name: Setup Node.js
         uses: actions/setup-node@v3
